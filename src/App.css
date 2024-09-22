@@ -1,0 +1,120 @@
+.app {
+    width: 18rem;
+    background-color: whitesmoke;
+    margin: 4rem auto 0 auto;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+}
+
+.display {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgb(226, 226, 226);
+    border-radius: 4px;
+    padding: 1rem 0;
+}
+
+.expression {
+    text-align: center;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+    color: rgb(153, 153, 153);
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.panel {
+    width: 95%;
+    height: 14rem;
+    background-color: rgb(226, 226, 226);
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers {
+    width: 13rem;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+        'seven eight nine'
+        'four five six'
+        'one two three'
+        'zero zero zero';
+}
+
+.numbers button {
+    border-right: none;
+}
+
+.numbers button:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.operators {
+    width: 4rem;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.operators button {
+    border-left: none;
+    background-color: darkblue;
+    color: whitesmoke;
+}
+
+.operators button:hover {
+    background-color: rgb(0, 0, 189);
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid rgb(226, 226, 226);
+    color: rgb(53, 53, 53);
+}
